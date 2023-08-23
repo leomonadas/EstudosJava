@@ -3,8 +3,7 @@ package bytebank_herdado;
 public class Funcionario {
 	private String nome;
 	private String cpf;
-	private double salario;
-	private int tipo = 0; //0 = funcionario comum; 1 - gerente; 2 - diretor;
+	protected double salario;
 	
 	public Funcionario() {
 		
@@ -14,13 +13,13 @@ public class Funcionario {
 		return this.salario*0.1;
 	}
 	
-	public void setTipo(int tipo) {
-		this.tipo = tipo;
-	}
-	
-	public int getTipo() {
-		return tipo;
-	}
+//	public void setTipo(int tipo) {
+//		this.tipo = tipo;
+//	}
+//	
+//	public int getTipo() {
+//		return tipo;
+//	}
 	
 	public String getNome() {
 		return nome;
